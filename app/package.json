@@ -1,0 +1,14 @@
+{
+  "name": "vp",
+  "version": "1.0.0",
+  "description": "vp initial build",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Kevin",
+  "license": "ISC",
+  "dependencies": {
+    "underscore": "^1.8.3"
+  }
+}

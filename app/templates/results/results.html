@@ -1,0 +1,57 @@
+<template name="results">
+  <h1>Results Page</h1>
+  {{#if currentUser}}
+  {{> dropDown2}}
+  <!-- Results input for every week of season -->
+  <form class="scores">
+    <input type="text" id="week1" placeholder="Week 1 Points"><br>
+    <input type="text" id="week2" placeholder="Week 2 Points"><br>
+    <input type="text" id="week3" placeholder="Week 3 Points"><br>
+    <input type="text" id="week4" placeholder="Week 4 Points"><br>
+    <input type="text" id="week5" placeholder="Week 5 Points"><br>
+    <input type="text" id="week6" placeholder="Week 6 Points"><br>
+    <input type="text" id="week7" placeholder="Week 7 Points"><br>
+    <input type="text" id="week8" placeholder="Week 8 Points"><br>
+    <input type="text" id="week9" placeholder="Week 9 Points"><br>
+    <input type="text" id="week10" placeholder="Week 10 Points"><br>
+    <input type="text" id="week11" placeholder="Week 11 Points"><br>
+    <input type="text" id="week12" placeholder="Week 12 Points"><br>
+    <input type="text" id="week13" placeholder="Week 13 Points"><br>
+    <input type="text" id="week14" placeholder="Week 14 Points"><br>
+    <input type="submit" value="Update Scores">
+  </form>
+  {{/if}}
+  </template>
+<!-- Team List dropdown -->
+<template name="dropDown2">
+<select name="team" class="dd2">
+{{#each teamNames}}
+<option>{{this}}</option>
+{{/each}}
+</select>
+<!-- Win selection drop down -->
+<div class="form-group">
+  <label for="sel1">Number of Wins</label>
+  <select class="form-control" id="sel1">
+    <option>0</option>
+    <option>1</option>
+    <option>2</option>
+    <option>3</option>
+    <option>4</option>
+    <option>5</option>
+    <option>6</option>
+    <option>7</option>
+    <option>8</option>
+    <option>9</option>
+    <option>10</option>
+    <option>11</option>
+    <option>12</option>
+    <option>13</option>
+    <option>14</option>
+
+  </select>
+</div>
+</template>
+
+
+

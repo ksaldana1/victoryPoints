@@ -1,0 +1,36 @@
+<!-- Main Template; Header for All Pages -->
+<template name="main">
+<head>
+  <title>Victory Points Converter</title>
+</head>
+<body>
+  {{> loginButtons}}
+  <h1>Victory Points Converter</h1>
+  <ul class="nav nav-pills">
+    <li>
+      <a href="{{pathFor route='home'}}">Home</a>
+    </li>
+    <li>
+      <a href="{{pathFor route='standings'}}">Standings</a>
+    </li>
+    <li>
+      <a href="{{pathFor route='teams'}}">Teams</a>
+    </li>
+    <li>
+      <a href="{{pathFor route='schedule'}}">Schedule</a>
+    </li>
+    <li>
+      <a href="{{pathFor route='results'}}">Results</a>
+    </li>
+    <li>
+      <a href="{{pathFor route='calc'}}">Calculation</a>
+    </li>
+  </ul>
+  <hr />
+  {{> yield }}
+
+ </body>
+ </template>
+
+
+

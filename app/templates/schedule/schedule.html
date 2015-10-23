@@ -1,0 +1,28 @@
+<template name="schedule">
+  <h1>Schedule Page</h1>
+  {{> week}}
+</template>
+
+<!-- Generate template for every week -->
+<template name="week">
+ {{#each numWeeks}}
+ <h1>Week {{this}}</h1>
+ {{#each matchups}}
+ {{> dropDown}}&nbsp;&nbsp;&nbsp;&nbsp;versus&nbsp;&nbsp;&nbsp;&nbsp;{{> dropDown}}
+ <br>
+ {{/each}}
+ {{/each}}
+
+</template>
+
+<!-- Individual dropdown list; includes team names -->
+<template name="dropDown">
+<select name="team" class="sss">
+{{#each teamNames}}
+<option>{{this}}</option>
+{{/each}}
+</select>
+</template>
+
+
+

@@ -1,0 +1,28 @@
+<!-- Template to add, remove teams -->
+<template name="teams">
+  <h1>Teams Page</h1>
+  <table class="table">
+  <th>Owner</th>
+  <th>Team Name</th>
+  {{#each team}}
+    <tr class="team {{selectedClass}}">
+    <td>{{owner}} </td>
+    <td>{{teamName}}</td>
+
+    </tr>
+  {{/each}}
+  </table>
+  {{#if currentUser}}
+  <form class='addTeam'>
+    <input type="text" name="ownerName" placeholder="Team Owner">
+    <input type="text" name="teamName" placeholder="Team Name">
+    <input type="submit" value="Add Team">
+  </form>
+  <br>
+
+  <input type="button" class="remove" value="Remove selected player">
+  {{/if}}
+
+
+
+</template>

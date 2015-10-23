@@ -1,0 +1,11 @@
+/* CSS declarations go here */
+.selected {
+  background-color: yellow;
+}
+hr {
+    height: 2px;
+    background-color:#555;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+}
